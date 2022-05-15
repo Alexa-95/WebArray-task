@@ -1,0 +1,128 @@
+@use '../custom'as *;
+
+@font-face {
+  font-family: "Black";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../../assets/fonts/MotivaSansBlack.woff.ttf");
+  src: url("../../assets/fonts/MotivaSansBlack.woff.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-display: block;
+  src: url("../../assets/fonts/MotivaSansExtraBold.ttf");
+  src: url("../../assets/fonts/MotivaSansExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("../../assets/fonts/MotivaSansBold.woff.ttf");
+  src: url("../../assets/fonts/MotivaSansBold.woff.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("../../assets/fonts/MotivaSansMedium.woff.ttf");
+  src: url("../../assets/fonts/MotivaSansMedium.woff.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../../assets/fonts/MotivaSansRegular.woff.ttf");
+  src: url("../../assets/fonts/MotivaSansRegular.woff.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("../../assets/fonts/MotivaSansLight.woff.ttf");
+  src: url("../../assets/fonts/MotivaSansLight.woff.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Thin";
+  font-style: normal;
+  font-weight: 200;
+  font-display: block;
+  src: url("../../assets/fonts/MotivaSansThin.ttf");
+  src: url("../../assets/fonts/MotivaSansThin.ttf") format("truetype");
+}
+
+h1 {
+  font-size: 2.5rem;
+  @include media-breakpoint-up(md) {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  @include media-breakpoint-up(md) {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
+}
+
+.text-title {
+  font-size: 1.125rem;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
+}
+
+.text-normal {
+  font-size: 1.25rem;
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+}
+
+.text-small {
+  font-size: .875rem;
+  @include media-breakpoint-up(md) {
+    font-size: 1.125rem;
+  }
+}
+
+.text-black{
+  font-family: "Black";
+}
+.text-e-bold{
+  font-family: "Extra Bold";
+}
+.text-bold{
+  font-family: "Bold";
+}
+.text-medium{
+  font-family: "Medium";
+}
+.text-regular{
+  font-family: "Regular";
+}
+.text-light{
+  font-family: "Light";
+}
+.text-thin{
+  font-family: "Thin";
+}

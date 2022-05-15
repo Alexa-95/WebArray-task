@@ -1,0 +1,41 @@
+// MAIN COLORS 
+$pink: #bc4595;
+$blue-darkest: #232649;
+$blue-dark: #003083;
+$blue-medium: #007ad8;
+$blue-ligth: #2196f3;
+$green-dark: #0a473d;
+$orange: #ff8a65;
+
+$primary: $pink;
+$secondary: $blue-darkest;
+
+// OTHER COLORS
+$gradient-left: #84499a;
+$gradient-mid: #c74494;
+$gradient-right: #f49b92;
+
+$green-lightest: #cef7dc;
+$blue-lightest: #d6f0ff;
+$white-mid: #f2f2f2;
+$black: #000;
+
+
+// ##########################################
+//   OPTION 1: 
+// - IMPORT BOOTSTRAP ( The entire bootstrap with everything)
+// ##########################################
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// ##########################################
+//   OPTION 2: 
+// - IMPORT IMPORT ONLY THE PART OF BOOTSTRAP YOU WANT TO USE
+// ##########################################
+
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+// Include any optional Bootstrap components as you like
+// @import "../node_modules/bootstrap/scss/root";
+// @import "../node_modules/bootstrap/scss/reboot";

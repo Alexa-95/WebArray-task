@@ -1,0 +1,20 @@
+@use '../custom'as *;
+@use '../components/buttons'as *;
+
+.start-section {
+  background: $gradient-left;
+  background: linear-gradient(90deg, $gradient-left 0%, $gradient-mid 50%, $gradient-right 100%);
+  padding-top: 200px;
+
+  .btns-container{
+    margin-top: 50px;
+
+    .button{
+      width: 100%;
+    }
+  }
+
+  .button-cta {
+    @include button-cta($pdng: 15px 25px, $border-r: 8px);
+  }
+}
