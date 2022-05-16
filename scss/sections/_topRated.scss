@@ -1,0 +1,95 @@
+@use '../custom'as *;
+@use '../components/buttons'as *;
+
+#top-rated {
+  .row {
+    &-topRated {
+
+      .top-text,
+      .pg {
+        color: $secondary;
+      }
+
+      .scd-text {
+        color: $primary;
+      }
+
+      .pg {
+        margin: 50px 0 0;
+      }
+
+      .btns-container {
+        margin: 50px 0 0;
+
+        .button-cta {
+          @include button-cta($pdng: 10px 25px, $bg-c: $primary);
+        }
+
+        .button:not(.button-cta) {
+          color: $primary;
+        }
+      }
+    }
+
+    &-call {
+      margin-top: 100px;
+      .call {
+        &-items {
+          &:nth-child(2n + 1){
+            .call-item {
+              &:nth-child(2n + 1){
+                .icon-headphones{
+                  svg{
+                    g{
+                      fill: $blue-ligth;
+                    }
+                  }
+                }
+              }
+              &:nth-child(2n){
+                .icon-headphones{
+                  svg{
+                    g{
+                      fill: $primary;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(2n){
+            .call-item {
+              &:nth-child(2n + 1){
+                .icon-headphones{
+                  svg{
+                    g{
+                      fill: $primary;
+                    }
+                  }
+                }
+              }
+              &:nth-child(2n){
+                .icon-headphones{
+                  svg{
+                    g{
+                      fill: $blue-ligth;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .text-title {
+        display: block;
+        margin: 40px 0;
+        color: $secondary;
+      }
+      .text-title,
+      .text-regular{
+        color: $secondary;
+      }
+    }
+  }
+}

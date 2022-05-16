@@ -1,0 +1,56 @@
+@use '../custom'as *;
+@use '../components/buttons'as *;
+
+#phone {
+  background: rgb(214, 240, 255);
+  background: linear-gradient(0deg, $blue-lightest 0%, $blue-lightest 50%, #ffffff 50%, #ffffff 100%);
+  padding: 50px 0;
+
+  .wd-container {
+    position: relative;
+    margin: 50px auto;
+    background-color: $blue-ligth;
+
+    @include media-breakpoint-up(xl) {
+      width: calc(100% - 130px);
+      max-width: 1235px;
+    }
+  }
+
+  .img-phone {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    height: calc(100% + 37px);
+    width: auto;
+  }
+
+  .phone-box {
+    padding: 50px 0;
+    text-align: right;
+
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+    }
+
+    .top-text {
+      color: $secondary;
+    }
+
+    .scd-text {
+      color: #fff;
+    }
+  }
+
+  .btns-container {
+    margin: 50px 0 0;
+
+    .button-cta {
+      @include button-cta($pdng: 10px 25px, $bg-c: #fff, $color: $secondary);
+    }
+
+    .button:not(.button-cta) {
+      color: #fff;
+    }
+  }
+}
