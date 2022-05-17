@@ -9,12 +9,12 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 1.75rem;
   }
 }
 
-@mixin button-cta($pdng: 15px 25px, $bg-c: #000, $color: #fff, $border-r: 4px){
+@mixin button-cta($pdng: 10px 25px, $bg-c: #000, $color: #fff, $border-r: 4px){
   padding: $pdng;
   background-color: $bg-c;
   color: $color;

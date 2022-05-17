@@ -20,7 +20,6 @@ $blue-lightest: #d6f0ff;
 $white-mid: #f2f2f2;
 $black: #000;
 
-
 // ##########################################
 //   OPTION 1: 
 // - IMPORT BOOTSTRAP ( The entire bootstrap with everything)
@@ -39,3 +38,16 @@ $black: #000;
 // Include any optional Bootstrap components as you like
 // @import "../node_modules/bootstrap/scss/root";
 // @import "../node_modules/bootstrap/scss/reboot";
+
+.gy-custom{
+    --bs-gutter-y: 0.9375rem;
+    @include media-breakpoint-down(lg){
+        --bs-gutter-y: 0.75rem;
+    }
+}
+.gx-custom{
+    --bs-gutter-x: 0.9375rem;
+    @include media-breakpoint-down(lg){
+        --bs-gutter-x: 0.75rem;
+    }
+}

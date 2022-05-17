@@ -6,16 +6,76 @@
   background: linear-gradient(90deg, $gradient-left 0%, $gradient-mid 50%, $gradient-right 100%);
   padding-top: 200px;
 
-  .btns-container{
-    margin-top: 50px;
+  #carouselHome{
+    .carousel-inner{
+      overflow: visible;
+    }
+    .carousel-item{
+      &_container{
+        position: relative;
+        @include media-breakpoint-up(md){
+          max-width: 90%;
+          margin: 0 5%;
+          min-height: 490px;
+        }
+        @include media-breakpoint-up(xl){
+          display: flex;
+          max-width: 80%;
+          margin: 0 10%;
+          min-height: 561px;
+        }
+      }
 
-    .button{
-      width: 100%;
+    }
+  }
+  .carousel-control-prev, .carousel-control-next{
+    width: 5%;
+  }
+
+  .h-main{
+    @include media-breakpoint-down(md){
+      text-align: center;
+      display: flex;
+      flex-direction: column;
     }
   }
 
+  .btns-container{
+    margin: 50px 0;
+    @include media-breakpoint-down(lg){
+      max-width: 300px;
+      margin: 50px 0;
+    }
+    @include media-breakpoint-down(md){
+      margin: 50px auto;
+    }
+
+    .button{
+      width: 100%;
+      @include media-breakpoint-down(lg){
+        margin-bottom: 25px;
+      }
+      &:not(.button-cta){
+        @include media-breakpoint-down(lg){
+          @include button-cta($border-r: 8px, $bg-c: transparent, $color: #000);
+          border: 2px solid #000;
+        }
+      }
+    }
+  }
   .button-cta {
-    @include button-cta($pdng: 15px 25px, $border-r: 8px);
+    @include button-cta($border-r: 8px);
+  }
+
+  .slider-image{
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    width: 380px;
+    height: initial;
+    @include media-breakpoint-up(lg){
+      width: 434px;
+    }
   }
 }
 

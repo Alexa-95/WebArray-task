@@ -65,42 +65,42 @@
 
 h1 {
   font-size: 2.5rem;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 5rem;
   }
 }
 
 h2 {
   font-size: 2rem;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 4rem;
   }
 }
 
 h3 {
   font-size: 1.75rem;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 3rem;
   }
 }
 
 .text-title {
   font-size: 1.125rem;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 2rem;
   }
 }
 
 .text-normal {
   font-size: 1.25rem;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 1.5rem;
   }
 }
 
 .text-small {
   font-size: .875rem;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: 1.125rem;
   }
 }
@@ -125,4 +125,10 @@ h3 {
 }
 .text-thin{
   font-family: "Thin";
+}
+.e-bold_to_regular{
+  font-family: "Regular";
+  @include media-breakpoint-up(md) {
+    font-family: "Extra Bold";
+  }
 }
