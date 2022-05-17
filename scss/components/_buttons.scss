@@ -14,7 +14,7 @@
   }
 }
 
-@mixin button-cta($pdng: 15px 25px, $bg-c: #000, $color: #fff, $border-r: 4px){
+@mixin button-cta($pdng: 10px 25px, $bg-c: #000, $color: #fff, $border-r: 4px){
   padding: $pdng;
   background-color: $bg-c;
   color: $color;

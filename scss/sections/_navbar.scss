@@ -1,13 +1,44 @@
 @use '../custom' as *;
 
+#header-menu{
+  background: linear-gradient(90deg, $gradient-left 0%, $gradient-mid 50%, $gradient-right 100%);
+  
+}
 .menu {
   padding: 30px 0;
   background-color: rgba(255, 255, 255, 0.25);
 
+  .phonecall{
+    a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.6rem;
+      padding: 0.25rem 0.75rem;
+      @include media-breakpoint-up(md){
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .logo-image{
+    max-width: calc(100% - 100px);
+    img{
+      @include media-breakpoint-down(md){
+        display: block;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center;
+        padding: 0 0.7rem;
+      }
+    }
+  }
+
   .navbar-toggler{
     color: $white;
     border: unset;
-    i{
+    font-size: 1.8rem;
+    box-shadow: none;
+    @include media-breakpoint-up(md){
       font-size: 2.2rem;
     }
   }
@@ -15,11 +46,6 @@
   &-extra{
     background-color: rgba(251, 251, 251, 0.2);
     box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.07);
-
-    .container{
-      justify-content: flex-end;
-    }
-
   }
   .navbar-nav{
     width: 100%;

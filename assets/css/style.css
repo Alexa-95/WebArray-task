@@ -10899,23 +10899,60 @@ h3 {
   font-family: "Thin";
 }
 
+.e-bold_to_regular {
+  font-family: "Regular";
+}
+@media (min-width: 768px) {
+  .e-bold_to_regular {
+    font-family: "Extra Bold";
+  }
+}
+
+#header-menu {
+  background: linear-gradient(90deg, #84499a 0%, #c74494 50%, #f49b92 100%);
+}
+
 .menu {
   padding: 30px 0;
   background-color: rgba(255, 255, 255, 0.25);
 }
+.menu .phonecall a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0.25rem 0.75rem;
+}
+@media (min-width: 768px) {
+  .menu .phonecall a {
+    font-size: 2rem;
+  }
+}
+.menu .logo-image {
+  max-width: calc(100% - 100px);
+}
+@media (max-width: 767.98px) {
+  .menu .logo-image img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 0 0.7rem;
+  }
+}
 .menu .navbar-toggler {
   color: #fff;
   border: unset;
+  font-size: 1.8rem;
+  box-shadow: none;
 }
-.menu .navbar-toggler i {
-  font-size: 2.2rem;
+@media (min-width: 768px) {
+  .menu .navbar-toggler {
+    font-size: 2.2rem;
+  }
 }
 .menu-extra {
   background-color: rgba(251, 251, 251, 0.2);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.07);
-}
-.menu-extra .container {
-  justify-content: flex-end;
 }
 .menu .navbar-nav {
   width: 100%;
@@ -10944,14 +10981,46 @@ h3 {
   background: linear-gradient(90deg, #84499a 0%, #c74494 50%, #f49b92 100%);
   padding-top: 200px;
 }
+@media (max-width: 767.98px) {
+  .start-section .h-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .start-section .btns-container {
   margin-top: 50px;
+}
+@media (max-width: 767.98px) {
+  .start-section .btns-container {
+    max-width: 300px;
+    margin: 50px auto;
+  }
 }
 .start-section .btns-container .button {
   width: 100%;
 }
+@media (max-width: 767.98px) {
+  .start-section .btns-container .button {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .start-section .btns-container .button:not(.button-cta) {
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+    border: 2px solid #000;
+  }
+  .start-section .btns-container .button:not(.button-cta):hover {
+    filter: brightness(1.05);
+    box-shadow: 0px 5px 14px 5px rgba(0, 0, 0, 0.2);
+  }
+}
 .start-section .button-cta {
-  padding: 15px 25px;
+  padding: 10px 25px;
   background-color: #000;
   color: #fff;
   border-radius: 8px;

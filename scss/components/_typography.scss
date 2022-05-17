@@ -126,3 +126,9 @@ h3 {
 .text-thin{
   font-family: "Thin";
 }
+.e-bold_to_regular{
+  font-family: "Regular";
+  @include media-breakpoint-up(md) {
+    font-family: "Extra Bold";
+  }
+}

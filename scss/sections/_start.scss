@@ -6,16 +6,37 @@
   background: linear-gradient(90deg, $gradient-left 0%, $gradient-mid 50%, $gradient-right 100%);
   padding-top: 200px;
 
+  .h-main{
+    @include media-breakpoint-down(md){
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .btns-container{
     margin-top: 50px;
+    @include media-breakpoint-down(md){
+      max-width: 300px;
+      margin: 50px auto;
+    }
 
     .button{
       width: 100%;
+      @include media-breakpoint-down(md){
+        margin-bottom: 25px;
+      }
+      &:not(.button-cta){
+        @include media-breakpoint-down(md){
+          @include button-cta($border-r: 8px, $bg-c: transparent, $color: #000);
+          border: 2px solid #000;
+        }
+      }
     }
   }
 
   .button-cta {
-    @include button-cta($pdng: 15px 25px, $border-r: 8px);
+    @include button-cta($border-r: 8px);
   }
 }
 
