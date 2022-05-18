@@ -6,11 +6,13 @@
   outline: unset;
   text-align: center;
   font-size: 1.25rem;
+  line-height: 1.25rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   
   @include media-breakpoint-up(lg) {
     font-size: 1.75rem;
+    line-height: 1.75rem;
   }
 }
 

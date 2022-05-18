@@ -1,0 +1,31 @@
+@use '../custom'as *;
+@use '../components/buttons'as *;
+
+#service-serve{
+  margin: 50px 0;
+  .top-text{
+    color: $secondary;
+  }
+  .scd-text{
+    color: $blue-medium;
+  }
+  .p-service{
+    color: $secondary;
+    margin: 20px 0;
+  }
+  .row-service{
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+    .img-globe{
+      max-width: 100%;
+      height: initial;
+    }
+    .top-text{
+      @include media-breakpoint-up(lg) {
+        margin-top: 70px;
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
   .wd-container {
     position: relative;
     margin: 50px auto;
-    background-color: $blue-ligth;
+    background-color: $blue-medium;
 
     @include media-breakpoint-up(xl) {
       width: calc(100% - 130px);
@@ -19,9 +19,9 @@
 
   .phone-box{
     margin: 0 0 0 auto;
-    max-width: calc(100% - 100px);
-    @include media-breakpoint-up(xl){
-      max-width: calc(100%);
+    max-width: calc(100%);
+    @include media-breakpoint-up(md){
+      max-width: calc(100% - 100px);
     }
     @include media-breakpoint-up(xxl){
       max-width: calc(100% - 220px);
@@ -32,22 +32,33 @@
   .img-phone {
     position: absolute;
     left: 0;
-    top: -25px;
-    height: calc(100% + 37px);
-    width: auto;
-
-    @include media-breakpoint-up(md) {
-      //TODO
+    bottom: -5px;
+    height: 180px;
+    width: 121px;
+    object-fit: contain;
+    
+    @include media-breakpoint-up(sm) {
+      top: -15px;
+      bottom: unset;
+      height: calc(100% + 22px);
+      width: auto;
+    }
+    @include media-breakpoint-up(lg) {
+      top: -25px;
+      height: calc(100% + 37px);
     }
   }
 
-  .phone-box {
+  .phone-box-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: right;
     min-height: 200px;
-    
+
+    @include media-breakpoint-down(sm){
+      margin-left: 120px;
+    }    
     @include media-breakpoint-up(lg) {
       min-height: 375px;
     }
@@ -80,7 +91,7 @@
   }
   .phone-mobile-button{
     button{
-      @include button-cta($pdng: 10px 25px, $bg-c: $blue-ligth, $color: #fff);
+      @include button-cta($pdng: 10px 25px, $bg-c: $blue-medium, $color: #fff);
       width: 100%;
     }
   }

@@ -1,7 +1,54 @@
 @use '../custom'as *;
 
 
-footer {
-  padding-top: 1rem;
+.footer {
+  padding: 30px;
   background-color: #000000;
+  @include media-breakpoint-down(md) {
+    padding: 30px 15px;
+  }
+
+  &-img{
+    height: initial;
+    object-fit: contain;
+    margin: 25px 0;
+    max-width: 250px;
+    
+    @include media-breakpoint-up(md) {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  &-menu{
+    margin-bottom: 15px;
+    &_item{
+      text-decoration: unset;
+      @include media-breakpoint-down(md) {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+      }
+    }
+  }
+  &-rights{
+    > div{
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0;
+      }
+    }
+    &_info{
+      color: $white;
+      @include media-breakpoint-down(md) {
+        color: $gray;
+      }
+    }
+  }
+
+  .space{
+    padding: 0 5px;
+  }
 }

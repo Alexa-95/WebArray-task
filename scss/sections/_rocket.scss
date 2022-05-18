@@ -1,0 +1,87 @@
+@use '../custom'as *;
+@use '../components/buttons'as *;
+
+#rocket{
+  .dark-green-bgr{
+    background-color: $green-dark;
+  }
+  .light-green-bgr{
+    background-color: $green-lightest;
+  }
+
+  .rocket{
+    &-title{
+      position: relative;
+      padding: 50px 15px;
+      text-align: center;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border-style: solid;
+        border-width: 20px 30px 0 30px;
+        border-color: $green-dark transparent transparent transparent;
+
+        @include media-breakpoint-up(md) {
+          border-width: 35px 60px 0 60px;
+        }
+      }
+    }
+    &-content{
+      padding: 50px 0;
+      @include media-breakpoint-up(md) {
+        padding: 100px 0 ;
+      }
+    }
+    &-item{
+      &_inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 8px 8px rgba(72,72,72,0.12);
+      }
+    }
+    &-bottom{
+      position: relative;
+      padding: 50px;
+      text-align: center;
+
+      .p-rocket-bottom{
+        margin: 25px 0 35px;
+      }
+
+      .button{
+        color: #000;
+      }
+    }
+  }
+  
+  .img-rocket{
+    max-width: 100%;
+    height: initial;
+    object-fit: contain;
+    margin: 10px 0;
+  }
+  h4{
+    margin: 25px 0;
+    @include media-breakpoint-up(lg) {
+      margin: 50px 0;
+    }
+  }
+  .p-rocket{
+    color: $secondary;
+  }
+
+  .button-cta{
+    @include button-cta($bg-c: $orange)
+  }
+}

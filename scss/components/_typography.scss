@@ -132,3 +132,9 @@ h3 {
     font-family: "Extra Bold";
   }
 }
+.e-bold_to_bold{
+  font-family: "Bold";
+  @include media-breakpoint-up(md) {
+    font-family: "Extra Bold";
+  }
+}

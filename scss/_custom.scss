@@ -17,6 +17,7 @@ $gradient-right: #f49b92;
 
 $green-lightest: #cef7dc;
 $blue-lightest: #d6f0ff;
+$gray: #8e8e8e;
 $white-mid: #f2f2f2;
 $black: #000;
 
@@ -40,14 +41,14 @@ $black: #000;
 // @import "../node_modules/bootstrap/scss/reboot";
 
 .gy-custom{
-    --bs-gutter-y: 0.9375rem;
+    --bs-gutter-y: 1.875rem;
     @include media-breakpoint-down(lg){
-        --bs-gutter-y: 0.75rem;
+        --bs-gutter-y: 1.5rem;
     }
 }
 .gx-custom{
-    --bs-gutter-x: 0.9375rem;
+    --bs-gutter-x: 1.875rem;
     @include media-breakpoint-down(lg){
-        --bs-gutter-x: 0.75rem;
+        --bs-gutter-x: 1.5rem;
     }
 }
