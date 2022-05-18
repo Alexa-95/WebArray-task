@@ -2,9 +2,17 @@
 @use '../components/buttons'as *;
 
 #service-serve{
-  margin: 50px 0;
+  margin: 50px 0 0;
+  background-color: $white-mid;
+  
+  @include media-breakpoint-up(lg) {
+    background-color: #fff;
+  }
   .top-text{
     color: $secondary;
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
   }
   .scd-text{
     color: $blue-medium;
@@ -18,6 +26,9 @@
     @include media-breakpoint-up(md) {
       text-align: right;
     }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 50px;
+    }
     .img-globe{
       max-width: 100%;
       height: initial;
@@ -27,5 +38,110 @@
         margin-top: 70px;
       }
     }
+  }
+  .header-serve{
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+    span{
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
+  }
+  .buttons_colapse{
+    padding: 50px 0 70px;
+
+    .btn-collapse{
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      @include media-breakpoint-up(lg) {
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid $secondary;
+        border-radius: 38px;
+        aspect-ratio: 1/1;
+      }
+      &::after{
+        content: url('../../images/right-arrow.png');
+        margin: 0 5px 0 auto;
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+      }
+      > img{
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        @include media-breakpoint-up(lg) {
+          width: 81px;
+          height: 81px;
+        }
+      }
+
+      .small_to_h3{
+        margin: 0 10px;
+        @include media-breakpoint-up(lg) {
+          margin: 10px 0 0;
+          color: $secondary;
+        }
+      }
+    }
+  }
+  .col-phone{
+    @include media-breakpoint-up(lg) {
+      margin-top: 10%;
+    }
+  }
+  .phone-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../images/Phone.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 110%;
+
+    &_inner{
+      padding: 100px 8% 70px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3{
+        text-align: center;
+      }
+    }
+    .worker{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateX(20%);
+    }
+  }
+  p{
+    color: $secondary;
+  }
+  .constructions-list{
+    list-style: none;
+    padding-left: 0;
+    &_item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      color: $secondary;
+      &::before{
+        content: url('../../images/tick-mark.svg');
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .button-cta{
+    @include button-cta($pdng: 10px 25px, $bg-c: $blue-medium, $color: #fff);
+    width: fit-content;
+    line-height: normal;
   }
 }

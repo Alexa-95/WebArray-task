@@ -40,10 +40,14 @@ $black: #000;
 // @import "../node_modules/bootstrap/scss/root";
 // @import "../node_modules/bootstrap/scss/reboot";
 
+body{
+    overflow-x: hidden;
+}
+
 .gy-custom{
-    --bs-gutter-y: 1.875rem;
+    --bs-gutter-y: 0.9375rem;
     @include media-breakpoint-down(lg){
-        --bs-gutter-y: 1.5rem;
+        --bs-gutter-y: 0.75rem;
     }
 }
 .gx-custom{

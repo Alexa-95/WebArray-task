@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
 </head>
 <body>
-  <div id="header-menu" class="fixed-top">
+  <div id="header-menu">
     <nav class="navbar navbar-expand-lg navbar-light menu">
       <div class="container">
         <div class="phonecall d-lg-none">
@@ -300,10 +300,10 @@
         </div>
       </div>
     </div>
-    <div class="icons-colourfull">
-      <!-- TODO -->
+    <div class="icons-desktop d-none d-md-block">
+      <img class="bgr-icons" src="./images/icons-bgr-desktop.png" alt="icons-bgr-desktop" height="466">
     </div>
-    <div class="phone-mobile-button d-block d-md-none">
+    <div class="phone-mobile-button">
       <div class="row justify-content-center">
         <div class="col-10">
           <button type="button" class="button">
@@ -311,6 +311,10 @@
           </button>
         </div>
       </div>
+    </div>
+    <div class="icons-mobile d-block d-md-none">
+      <img class="bgr-icons" src="./images/icons-bgr-mobile.png" alt="icons-bgr-mobile">
+      <p class="text-medium text-normal">View More Features</p>
     </div>
   </section>
   <section id="service-serve">
@@ -331,21 +335,302 @@
         </div>
       </div>
       <div class="row row-serve gx-custom gy-custom">
-        <div class="col-md-6">
-          <h2 class="text-e-bold">
+        <div class="col-lg-6">
+          <h2 class="header-serve text-e-bold">
             <span class="top-text">How We </span>
-          </h2>
-          <h2 class="text-e-bold">
             <span class="scd-text">Serve Your </span>
-          </h2>
-          <h2 class="text-e-bold">
             <span class="top-text">Industry</span>
           </h2>
+          <div class="row buttons_colapse gy-custom">
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions1" role="button" aria-expanded="false" aria-controls="constructions1">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions1">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions2" role="button" aria-expanded="false" aria-controls="constructions2">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions2">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions3" role="button" aria-expanded="false" aria-controls="constructions3">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions3">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions4" role="button" aria-expanded="false" aria-controls="constructions4">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions4">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions5" role="button" aria-expanded="false" aria-controls="constructions5">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions5">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions6" role="button" aria-expanded="false" aria-controls="constructions6">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions6">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions7" role="button" aria-expanded="false" aria-controls="constructions7">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions7">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions8" role="button" aria-expanded="false" aria-controls="constructions8">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions8">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions9" role="button" aria-expanded="false" aria-controls="constructions9">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions9">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions10" role="button" aria-expanded="false" aria-controls="constructions10">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions10">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions11" role="button" aria-expanded="false" aria-controls="constructions11">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions11">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <a class="btn btn-collapse" data-bs-toggle="collapse" href="#constructions12" role="button" aria-expanded="false" aria-controls="constructions12">
+                <img src="./images/excavator.svg" alt="excavator" width="81" height="81"> 
+                <span class="small_to_h3">Constructions</span>
+              </a>
+              <div class="d-block d-lg-none">
+                <div class="collapse constructions-collapse" id="constructions12">
+                  <div class="card card-body">
+                    <p class="text-regular text-normal">
+                      Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    <span class="e-bold_to_bold text-title">Main Advantages</span>
+                    <ul class="constructions-list">
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                      <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-lg-"></div>
+        <div class="col-lg-6 col-phone">
+          <div class="phone-box d-none d-lg-block">
+            <div class="phone-box_inner">
+              <h3 class="text-e-bold">
+                <span class="top-text">Constructions?</span>
+              </br>
+                <span class="scd-text">We got you!</span>
+              </h3>
+              <p class="text-regular text-normal">
+                Made for business owners, not IT wizards. We can help you set up in minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              </p>
+              <span class="e-bold_to_bold text-title">Main Advantages</span>
+              <ul class="constructions-list">
+                <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+                <li class="constructions-list_item"><span class="text-regular text-normal">Lorem ipsum dolor sit amet,</span></li>
+              </ul>
+              <button class="button button-cta">Let’s get started</button>
+            </div>
+            <img src="./images/Guy.png" alt="worker" class="worker">
+          </div>
         </div>
-        <div class="col-md-6"></div>
       </div>
     </div>
   </section>
@@ -359,29 +644,29 @@
       <div class="col-12">
         <div class="container">
           <div class="row rocket-content_inner justify-content-between gx-custom gy-custom">
-            <div class="col-lg-4 rocket-item">
+            <div class="col-md-4 rocket-item">
               <div class="rocket-item_inner">
                 <img class="img-rocket" src="./images/Rocket.png" alt="rocket" width="142" height="141">
                 <h4 class="e-bold_to_bold text-title ">I'm Just Starting Up</h4>
-                <p class="p-rocket">and don't have experience with cloud phone system</p>
+                <p class="p-rocket text-normal">and don't have experience with cloud phone system</p>
                 <button class="button button-cta">
                   <span class="text-normal">Let's get started</span>
                 </button>
               </div>
             </div>
-            <div class="col-lg-4 rocket-item">
+            <div class="col-md-4 rocket-item">
               <div class="rocket-item_inner">
                 <img class="img-rocket" src="./images/Rocket.png" alt="rocket" width="142" height="141">
                 <h4 class="e-bold_to_bold text-title ">I'm Just Starting Up</h4>
-                <p class="p-rocket">and don't have experience with cloud phone system</p>
+                <p class="p-rocket text-normal">and don't have experience with cloud phone system</p>
                 <button class="button button-cta"><span class="text-normal">Let's get started</span></button>
               </div>
             </div>
-            <div class="col-lg-4 rocket-item">
+            <div class="col-md-4 rocket-item">
               <div class="rocket-item_inner">
                 <img class="img-rocket" src="./images/Rocket.png" alt="rocket" width="142" height="141">
                 <h4 class="e-bold_to_bold text-title ">I'm Just Starting Up</h4>
-                <p class="p-rocket">and don't have experience with cloud phone system</p>
+                <p class="p-rocket text-normal">and don't have experience with cloud phone system</p>
                 <button class="button button-cta"><span class="text-normal">Let's get started</span></button>
               </div>
             </div>
@@ -389,11 +674,11 @@
         </div>
       </div>
     </div>
-    <div class="row rocket-bottom dark-green-bgr gx-custom gy-custom">
+    <div class="row rocket-bottom dark-green-bgr gx-custom">
       <div class="col-12">
         <div class="container">
           <h2 class="text-e-bold text-white">Still searching?</h2>
-          <p class="p-rocket-bottom text-white">Get yourself a custom phone system, ready for all your needs!</p>
+          <p class="p-rocket-bottom text-white text-title">Get yourself a custom phone system, ready for all your needs!</p>
           <button class="button button-cta text-n">
             <span>Contact One Of Our Specialists</span>
           </button>
@@ -404,41 +689,39 @@
   <footer class="footer">
     <div class="container">
       <div class="row gx-custom">
-        <div class="col-md-4 d-flex d-md-block justify-content-center">
+        <div class="col-xxl-4 d-flex d-md-block justify-content-center">
           <img class="footer-img" src="./images/Logo 2.png" alt="logo webarray">
         </div>
-        <div class="col-md-8">
+        <div class="col-xxl-8">
           <div class="row footer-menu">
             <div class="col-6 col-lg-3">
               <a class="footer-menu_item" href="#">
-              <span class="footer-menu_item--icon"></span>
-              <span class="footer-menu_item--title text-white">
+                <img class="footer-menu_item--icon" src="./images/payments_black_24dp.svg" alt="payments_black_24dp">
+              <span class="footer-menu_item--title text-white text-bold text-normal">
                 PRICING
               </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
               <a class="footer-menu_item" href="#">
-                <span class="footer-menu_item--icon"></span>
-                <span class="footer-menu_item--title text-white">
+                <img class="footer-menu_item--icon" src="./images/star_outline_black_24dp.svg" alt="star_outline_black_24dp">
+                <span class="footer-menu_item--title text-white text-bold text-normal">
                   FEATURES
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
               <a class="footer-menu_item" href="#">
-                <span class="footer-menu_item--icon"></span>
-                <span class="footer-menu_item--title text-white">
+                <img class="footer-menu_item--icon" src="./images/devices_black_24dp.svg" alt="devices_black_24dp">
+                <span class="footer-menu_item--title text-white text-bold text-normal">
                   DEVICES
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
               <a class="footer-menu_item" href="#">
-                <span class="footer-menu_item--icon">
-                  <i class="fa fa-money"></i>
-                </span>
-                <span class="footer-menu_item--title text-white">
+                <img class="footer-menu_item--icon" src="./images/mail_black_24dp.svg" alt="mail_black_24dp">
+                <span class="footer-menu_item--title text-white text-bold text-normal">
                   CONTACT US
                 </span>
               </a>
@@ -446,10 +729,10 @@
           </div>
           <div class="row footer-rights gx-custom">
           <div class="col-12 col-lg-6">
-            <span class="footer-rights_info">
+            <span class="footer-rights_info text-small text-normal">
               © 2022 WebArray. All rights reserved</div>
             </span>
-          <div class="col-12 col-lg-6 text-white d-inline-flex align-items-center">
+          <div class="col-12 col-lg-6 text-white d-inline-flex align-items-center text-small text-normal">
             <img class="footer-rights_flag" src="./images/US-flag.png" alt="us-flag" width="18" height="19">
             <span class="space"></span>
             <span class="footer-rights_country">United States</span>
